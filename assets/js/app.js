@@ -31,8 +31,6 @@ todoApp.controller('taskCtrl', ['$scope', 'socket', function($scope, socket){
 		});
 	});
 
-
-
 	$scope.addNewTask = function(){
 		var data = $scope.taskName;
 		io.socket.post('/todo-add', {task : data}, function (resData, jwres){
