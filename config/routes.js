@@ -34,6 +34,21 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+
+  '/todo' : {
+    controller : 'TodoController',
+    action : 'List'
+  },
+
+  '/todo/:task' : {
+    controller : 'TodoController',
+    action : 'Complete'
+  },
+
+  '/todo-add' : {
+    controller : 'TodoController',
+    action : 'Add'
   }
 
   /***************************************************************************
